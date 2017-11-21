@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ModalModule } from './modal/modal.module';
 import { PageComponent } from './page/page.component';
+import { FormsModule } from '@angular/forms'
 
 
 const appRoutes: Routes = [
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    ModalModule
+    ModalModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]

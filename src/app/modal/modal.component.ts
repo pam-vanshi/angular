@@ -15,14 +15,19 @@ import { Hero } from '../modal';
           </div>
 
           <div class="body">
-            <input type="text" [(ngModel)]= "modalTitle">
-          
+            <input type="text" [(ngModel)]= "hero.name">
+            <p>{{hero.name}}</p>
+
           </div>
         </div>
       </div>
     `
 })
 export class ModalComponent implements OnInit {
+  hero: Hero = {
+    id: 1,
+    name: 'Windstorm'
+  };
   @Input() modalId: string;
   @Input() modalTitle: string;
   @Input() blocking = false;
