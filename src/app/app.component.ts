@@ -9,8 +9,7 @@ import { Hero } from './modal';
   <button (click)='modalService.open(modalId)'>Open Modal</button>
   <app-modal [modalTitle]="'Some title'" [blocking]='false' [modalId]='modalId'>
 
-    <div><input #hero type="text" [ngModel]="hero.name" required>
-    <p>{{hero.name}}</p></div>
+    <div>Some text here</div>
 
   </app-modal>
   <a routerLink="/page-2"><button> Go to second page</button></a>

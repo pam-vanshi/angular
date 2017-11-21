@@ -15,7 +15,8 @@ import { Hero } from '../modal';
           </div>
 
           <div class="body">
-            <ng-content></ng-content>
+            <input type="text" ng-modal= "modalTitle">
+
           </div>
         </div>
       </div>
@@ -26,6 +27,7 @@ export class ModalComponent implements OnInit {
   @Input() modalTitle: string;
   @Input() blocking = false;
   isOpen = false;
+  
 
   @HostListener('keyup') onMouseEnter(event) {
     this.keyup(event);
