@@ -15,7 +15,7 @@ import { Hero } from '../modal';
           </div>
 
           <div class="body">
-            <input type="text" [(ngModel)]= "hero.name">
+            <input type="text" >
             <p>{{hero.name}}</p>
 
           </div>

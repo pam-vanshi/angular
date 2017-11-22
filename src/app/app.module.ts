@@ -7,16 +7,21 @@ import { PageComponent } from './page/page.component';
 import { FormsModule } from '@angular/forms'
 
 
+
 const appRoutes: Routes = [
   {
     path: '',
     component: AppComponent,
     children: [
 
-      {path: 'page-2', component: PageComponent},
+      {path: 'page2', component: PageComponent},
 
           ]
   },
+  {
+    path:'page',
+    component: PageComponent
+  }
   ]
 @NgModule({
   declarations: [
@@ -24,9 +29,14 @@ const appRoutes: Routes = [
     PageComponent
   ],
   imports: [
+    RouterModule.forRoot(
+     appRoutes,
+     { enableTracing: true } // <-- debugging purposes only
+   ),
     BrowserModule,
     ModalModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]
