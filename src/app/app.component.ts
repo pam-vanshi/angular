@@ -12,7 +12,7 @@ import { Hero } from './modal';
     <div>Some text here</div>
 
   </app-modal>
-  <a routerLink="/page"><button class="btn btn-success pull-right" > Go to another page</button></a>
+  <a routerLink="/page2"><button class="btn btn-success pull-right" > Go to another page</button></a>
 
 
   `
